@@ -1,0 +1,234 @@
+:root {
+    --vs-purple: #68217a;
+    --vs-purple-light: #8632ab;
+    --vs-bg: #f5f3f7;
+    --vs-text: #1e1e1e;
+    --vs-border: #dcdcdc;
+    --danger: #cc0000;
+}
+
+body {
+    background-color: var(--vs-bg);
+    color: var(--vs-text);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--vs-purple);
+    margin-bottom: 30px;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--vs-purple);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--vs-text);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--vs-purple) !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--vs-purple-light) !important;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid transparent;
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid var(--vs-purple);
+    color: var(--vs-purple);
+}
+
+.btn-outline:hover {
+    background: #f0e6f2;
+}
+
+.btn-danger {
+    background: white;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+
+.btn-danger:hover {
+    background: #fff5f5;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.order-card {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--vs-border);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.order-card:hover {
+    border-color: var(--vs-purple);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.styled-form {
+    background: white;
+    padding: 30px;
+    border: 1px solid var(--vs-border);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.form-section h3 {
+    color: var(--vs-purple);
+    margin-top: 0;
+    border-bottom: 1px solid var(--vs-border);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.styled-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid var(--vs-border);
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.submit-btn-large {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--vs-purple);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn-large:hover {
+    background-color: var(--vs-purple-light);
+}
+
+.details-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details-card {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--vs-border);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.details-card h2 {
+    color: var(--vs-purple);
+    margin-top: 0;
+    border-bottom: 2px solid var(--vs-bg);
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.details-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.details-item {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.details-item strong {
+    width: 250px;
+    color: #555;
+    flex-shrink: 0;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

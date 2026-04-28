@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DeliveryService/DeliveryService.csproj" />
+  <Project Path="frontend/frontend_vs.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>

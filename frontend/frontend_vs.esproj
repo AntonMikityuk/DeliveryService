@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.4338480">
+	<PropertyGroup>
+		<StartupCommand>npm run dev</StartupCommand>
+		<JavaScriptTestRoot>src\</JavaScriptTestRoot>
+		<JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+		<!-- Это поможет избежать ошибок развертывания -->
+		<ShouldRunBuildScript>false</ShouldRunBuildScript>
+		<PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist</PublishAssetsDirectory>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,26 @@
+# Visual Studio / .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.slnLaunch.user
+
+# Для запуска проекта в VS
+!.vscode/launch.json
+
+# Node.js / React / Vite
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+
+# SQLite
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+Thumbs.db
